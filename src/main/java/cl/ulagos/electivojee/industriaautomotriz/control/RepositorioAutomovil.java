@@ -17,6 +17,17 @@ public class RepositorioAutomovil {
 		listaAutomovil.add(automovil);
 	}
 	
+	public Automovil obtenerAutomovil(String id) {
+		
+		for (Automovil automovil : listaAutomovil)
+		{
+			if (automovil.getIdentificador().equals(id))
+				return automovil;
+		}
+		
+		return null;
+	}
+	
 	public List<Automovil> cargarAutomoviles(){
 		
 		return listaAutomovil;

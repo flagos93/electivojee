@@ -41,5 +41,11 @@ public class ManufacturaAutomovil {
 		
 		return repositorioAutomovil.cargarAutomoviles();
 	}
+	
+	public Automovil obtenerAutomovil(String id) {
+		
+		return repositorioAutomovil.obtenerAutomovil(id);
+		
+	}
 
 }

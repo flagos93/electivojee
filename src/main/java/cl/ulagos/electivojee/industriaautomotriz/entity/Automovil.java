@@ -1,5 +1,6 @@
 package cl.ulagos.electivojee.industriaautomotriz.entity;
 
+
 public class Automovil {
 
 	private String identificador;
