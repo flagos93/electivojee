@@ -1,3 +1,4 @@
+/home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/AmigableConMedioAmbienteValidador.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/JAXRSConfiguration.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/control/RepositorioAutomovil.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/AutomovilCreado.java
@@ -6,6 +7,7 @@
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/boundary/ManufacturaAutomovil.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/Color.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/Automovil.java
+/home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/AmigableConMedioAmbiente.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/control/ColorAutomovilDefecto.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/control/AutomovilCreadoListener.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/TipoMotor.java

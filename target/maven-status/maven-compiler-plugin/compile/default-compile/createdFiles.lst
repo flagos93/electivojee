@@ -1,4 +1,5 @@
 cl/ulagos/electivojee/industriaautomotriz/entity/AutomovilCreado.class
+cl/ulagos/electivojee/industriaautomotriz/entity/AmigableConMedioAmbienteValidador.class
 cl/ulagos/electivojee/industriaautomotriz/boundary/ManufacturaAutomovil.class
 cl/ulagos/electivojee/industriaautomotriz/entity/Automovil.class
 cl/ulagos/electivojee/industriaautomotriz/control/FactoriaAutomovil.class
@@ -8,6 +9,7 @@ cl/ulagos/electivojee/industriaautomotriz/entity/Color.class
 cl/ulagos/electivojee/industriaautomotriz/control/RepositorioAutomovil.class
 cl/ulagos/electivojee/industriaautomotriz/entity/TipoMotor.class
 cl/ulagos/electivojee/industriaautomotriz/control/AutomovilCreadoListener.class
+cl/ulagos/electivojee/industriaautomotriz/entity/AmigableConMedioAmbiente.class
 cl/ulagos/electivojee/industriaautomotriz/boundary/AutomovilResource.class
 cl/ulagos/electivojee/industriaautomotriz/control/Diesel.class
 cl/ulagos/electivojee/industriaautomotriz/entity/Especificacion.class

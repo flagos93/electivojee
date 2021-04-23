@@ -11,6 +11,7 @@ import cl.ulagos.electivojee.industriaautomotriz.control.RepositorioAutomovil;
 import cl.ulagos.electivojee.industriaautomotriz.entity.Automovil;
 import cl.ulagos.electivojee.industriaautomotriz.entity.AutomovilCreado;
 import cl.ulagos.electivojee.industriaautomotriz.entity.Especificacion;
+import cl.ulagos.electivojee.industriaautomotriz.entity.TipoMotor;
 
 @Stateless
 public class ManufacturaAutomovil {
@@ -41,6 +42,12 @@ public class ManufacturaAutomovil {
 		
 		return repositorioAutomovil.cargarAutomoviles();
 	}
+	
+	public List<Automovil> obtenerAutomoviles(TipoMotor tipo){
+		
+		return repositorioAutomovil.cargarAutomoviles(tipo);
+	}
+	
 	
 	public Automovil obtenerAutomovil(String id) {
 		
