@@ -1,11 +1,14 @@
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/AmigableConMedioAmbienteValidador.java
+/home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/exception/CreacionAutomovilException.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/JAXRSConfiguration.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/control/RepositorioAutomovil.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/AutomovilCreado.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/boundary/AutomovilResource.java
+/home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/exception/ViolacionConstraintExceptionMapper.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/control/FactoriaAutomovil.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/boundary/ManufacturaAutomovil.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/Color.java
+/home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/exception/CreacionAutomovilExceptionMapper.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/Automovil.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/entity/AmigableConMedioAmbiente.java
 /home/dsanmartins/Documents/Asignaturas ULagos/Asignaturas I-2021/eclipse-workspace/electivojee/src/main/java/cl/ulagos/electivojee/industriaautomotriz/control/ColorAutomovilDefecto.java

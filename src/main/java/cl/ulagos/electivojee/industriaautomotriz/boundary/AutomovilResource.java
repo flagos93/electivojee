@@ -35,20 +35,20 @@ public class AutomovilResource {
 	@Context
 	UriInfo uriInfo;
 	
-	@GET
-	public JsonArray obtenerAutomoviles(@NotNull @QueryParam("filter") TipoMotor tipoMotor){
-
-		return manufacturaAutomovil.obtenerAutomoviles(tipoMotor)
-				.stream()
-				.map(c->Json.createObjectBuilder()
-						.add("color", c.getColor().name())
-						.add("motor", c.getTipoMotor().name())
-						.add("id", c.getIdentificador())
-						.add("test", "valor")
-						.build())
-				.collect(JsonCollectors.toJsonArray());
-
-	}
+//	@GET
+//	public JsonArray obtenerAutomoviles(@NotNull @QueryParam("filter") TipoMotor tipoMotor){
+//
+//		return manufacturaAutomovil.obtenerAutomoviles(tipoMotor)
+//				.stream()
+//				.map(c->Json.createObjectBuilder()
+//						.add("color", c.getColor().name())
+//						.add("motor", c.getTipoMotor().name())
+//						.add("id", c.getIdentificador())
+//						.add("test", "valor")
+//						.build())
+//				.collect(JsonCollectors.toJsonArray());
+//
+//	}
 
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
@@ -64,13 +64,13 @@ public class AutomovilResource {
 		return Response.created(uri).build();	
 	}
 	
-	@GET
-	@Path("{id}")
-	@Produces(MediaType.APPLICATION_JSON)
-	public Automovil obtenerAutomovil(@PathParam("id") String identificador) {
-		
-		return manufacturaAutomovil.obtenerAutomovil(identificador);
-		
-	}
+//	@GET
+//	@Path("{id}")
+//	@Produces(MediaType.APPLICATION_JSON)
+//	public Automovil obtenerAutomovil(@PathParam("id") String identificador) {
+//		
+//		return manufacturaAutomovil.obtenerAutomovil(identificador);
+//		
+//	}
 }
 

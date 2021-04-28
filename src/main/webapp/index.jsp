@@ -18,7 +18,9 @@
 		manufacturaAutomovil = (ManufacturaAutomovil) ctx.lookup("java:app/electivojee/ManufacturaAutomovil");
 		Especificacion especificacion = new Especificacion(Color.BLANCO, TipoMotor.DIESEL);
 		manufacturaAutomovil.manufacturaAutomovil(especificacion);
-		manufacturaAutomovil.inicializar();
+		manufacturaAutomovil.obtenerAutomoviles();
+		
+		//manufacturaAutomovil.inicializar();
 	}catch (Exception e) {
 		System.out.println("Problema:"+ e);
 	} %>
