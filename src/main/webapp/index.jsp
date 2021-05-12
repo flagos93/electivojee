@@ -2,8 +2,6 @@
 <%@ page import="cl.ulagos.electivojee.industriaautomotriz.boundary.*" %>
 <%@ page import="cl.ulagos.electivojee.industriaautomotriz.entity.*" %>
 
-
-    
 <!DOCTYPE html>
 <html>
 <head>
