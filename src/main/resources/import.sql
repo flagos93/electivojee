@@ -1,1 +1,1 @@
-insert into automovil(identificador,color,tipomotor) values('aaaa',0,0);
+insert into automovil(identificador,color,tipomotor) values('1','BLANCO','GASOLINA');

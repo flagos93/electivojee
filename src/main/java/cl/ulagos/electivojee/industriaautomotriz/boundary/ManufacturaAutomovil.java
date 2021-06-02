@@ -6,6 +6,8 @@ import java.util.Random;
 import javax.ejb.Stateless;
 import javax.enterprise.event.Event;
 import javax.inject.Inject;
+import javax.interceptor.Interceptor;
+import javax.interceptor.Interceptors;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -14,6 +16,7 @@ import cl.ulagos.electivojee.industriaautomotriz.entity.Automovil;
 import cl.ulagos.electivojee.industriaautomotriz.entity.AutomovilCreado;
 import cl.ulagos.electivojee.industriaautomotriz.entity.Especificacion;
 import cl.ulagos.electivojee.industriaautomotriz.exception.CreacionAutomovilException;
+import cl.ulagos.electivojee.industriaautomotriz.interceptores.MiInterceptor;
 
 @Stateless
 public class ManufacturaAutomovil {
@@ -30,12 +33,11 @@ public class ManufacturaAutomovil {
 	@Inject
 	Event<AutomovilCreado> automovilCreado; 
 
+	@Interceptors(MiInterceptor.class)
 	public Automovil manufacturaAutomovil(Especificacion especificacion) {
 
-		if (new Random().nextBoolean())
-			throw new CreacionAutomovilException("No se puede crear un automovil");
-
-
+		//if (new Random().nextBoolean())
+		//	throw new CreacionAutomovilException("No se puede crear un automovil");
 
 		Automovil automovil = factoriaAutomovil.manufacturaAutomovil(especificacion);
 		//repositorioAutomovil.store(automovil);
