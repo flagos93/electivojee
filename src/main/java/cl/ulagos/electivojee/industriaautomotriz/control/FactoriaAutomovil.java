@@ -14,10 +14,15 @@ public class FactoriaAutomovil {
 	@Diesel
 	Color colorAutomovilDefecto;
 	
+	@Inject
+	@Config("prefijo.id")
+	String prefijoID;
+	
 	public Automovil manufacturaAutomovil(Especificacion especificacion) {
 
 		Automovil automovil = new Automovil();
-		automovil.setIdentificador(UUID.randomUUID().toString());
+		
+		automovil.setIdentificador(prefijoID + "-" + UUID.randomUUID().toString());
 		automovil.setColor(especificacion.getColor() == null ? colorAutomovilDefecto: especificacion.getColor());
 		automovil.setTipoMotor(especificacion.getTipoMotor());
 		
