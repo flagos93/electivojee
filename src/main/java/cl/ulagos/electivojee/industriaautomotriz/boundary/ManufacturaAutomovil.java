@@ -11,6 +11,7 @@ import javax.interceptor.Interceptors;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import cl.ulagos.electivojee.industriaautomotriz.control.CacheAutomovil;
 import cl.ulagos.electivojee.industriaautomotriz.control.FactoriaAutomovil;
 import cl.ulagos.electivojee.industriaautomotriz.entity.Automovil;
 import cl.ulagos.electivojee.industriaautomotriz.entity.AutomovilCreado;
@@ -32,6 +33,10 @@ public class ManufacturaAutomovil {
 
 	@Inject
 	Event<AutomovilCreado> automovilCreado; 
+	
+	@Inject 
+	CacheAutomovil cacheAutomovil;
+	
 
 	@Interceptors(MiInterceptor.class)
 	public Automovil manufacturaAutomovil(Especificacion especificacion) {
@@ -40,6 +45,7 @@ public class ManufacturaAutomovil {
 		//	throw new CreacionAutomovilException("No se puede crear un automovil");
 
 		Automovil automovil = factoriaAutomovil.manufacturaAutomovil(especificacion);
+		cacheAutomovil.cache(automovil);
 		//repositorioAutomovil.store(automovil);
 		entityManager.persist(automovil);
 		automovilCreado.fire(new AutomovilCreado(automovil.getIdentificador()));
@@ -48,10 +54,13 @@ public class ManufacturaAutomovil {
 
 	public List<Automovil> obtenerAutomoviles(){
 
-		List<Automovil> lista = entityManager.createNamedQuery("TODOS_AUTOMOVILES", Automovil.class).getResultList();
-		for (Automovil a: lista)
-			System.out.println(a.getIdentificador());
-		return lista;
+		return cacheAutomovil.retrieveAutomoviles();
+		
+		/*
+		 * List<Automovil> lista = entityManager.createNamedQuery("TODOS_AUTOMOVILES",
+		 * Automovil.class).getResultList(); for (Automovil a: lista)
+		 * System.out.println(a.getIdentificador()); return lista;
+		 */
 	}
 
 
